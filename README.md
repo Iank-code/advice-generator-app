@@ -29,16 +29,12 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 
 This project is built with React js and Typescript
 
 - ![Typescript][Typescript]
 - [![React][React.js]][React-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -48,7 +44,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-To set up your project, you will need to clone the project and  install the dependencies. Below is a list of the available commands
+To set up your project, you will need to clone the project and install the dependencies. Below is a list of the available commands
 
 1. Clone the repo
    ```sh
@@ -64,8 +60,6 @@ To set up your project, you will need to clone the project and  install the depe
    npm run dev
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- USAGE EXAMPLES -->
 
 ## Usage
@@ -74,20 +68,13 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LICENSE -->
 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [product-screenshot]: ./src/assets/desktop.png
 [Typescript]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
