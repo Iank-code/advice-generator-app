@@ -3,13 +3,15 @@ import "./App.css";
 import iconDice from "./assets/images/icon-dice.svg";
 
 function App() {
+  // Interface for data being fetched
   interface AdviceData {
     id: number;
     advice: string;
   }
+
   const API: string = "https://api.adviceslip.com/";
-  // advice
   const [data, setData] = useState<AdviceData>();
+  const [dataId, setDataId] = useState<number>(1)
   useEffect(() => {
     fetch(`${API}advice`)
       .then((res) => {
@@ -17,7 +19,11 @@ function App() {
         return res.json();
       })
       .then((data) => setData(data.slip));
-  }, []);
+  }, [dataId]);
+
+  const FetchRandom = (id: number) => {
+    setDataId(id)
+  };
 
   return (
     <div className="advice-body">
@@ -35,7 +41,7 @@ function App() {
             <hr className="divider" />
           </div>
 
-          <button className="icon">
+          <button className="icon" onClick={() => FetchRandom(data.id)}>
             <img src={iconDice} alt="" />
           </button>
         </div>
