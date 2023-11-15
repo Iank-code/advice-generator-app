@@ -21,7 +21,14 @@
   width: 25vw;
 }
 h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color-icon);
+}
+h1{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .divider-tab {
