@@ -13,11 +13,12 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 2em 3em;
+  padding: 2em 1.5em;
   border-radius: 10px;
   gap: 10px;
   background-color: hsl(217, 19%, 24%);
   color: hsl(193, 38%, 86%);
+  width: 25vw;
 }
 h3 {
   color: var(--color-icon);
@@ -30,7 +31,7 @@ h3 {
   gap: 15px;
 }
 .divider-tab .divider {
-  width: 70px;
+  width: 25vw;
   height: 1px;
 }
 .divider-tab .vertical-divider-tab {
@@ -46,14 +47,16 @@ h3 {
   justify-content: center;
   position: relative;
   align-items: center;
-  top: 3.3em;
-  left: 4.5em;
+  top: 4em;
+  left:11em;
   outline: none;
   background-color: hsl(193, 38%, 86%);
   border-radius: 50%;
   width: 40px;
   height: 40px;
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 .advice-body .icon:hover {
   background-color: var(--color-icon);
