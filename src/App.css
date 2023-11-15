@@ -26,8 +26,10 @@ h3 {
   align-items: center;
   color: var(--color-icon);
 }
-h1{
+h1 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -55,7 +57,7 @@ h1{
   position: relative;
   align-items: center;
   top: 4em;
-  left:11em;
+  left: 11em;
   outline: none;
   background-color: hsl(193, 38%, 86%);
   border-radius: 50%;
@@ -69,8 +71,16 @@ h1{
   background-color: var(--color-icon);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media screen and (max-width: 400px) {
+  .container {
+    width: 85vw;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .divider-tab .divider {
+    width: 85vw;
+  }
+  .advice-body .icon {
+    left: 8.5em;
   }
 }
