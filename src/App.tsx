@@ -11,7 +11,6 @@ function App() {
 
   const API: string = "https://api.adviceslip.com/";
   const [data, setData] = useState<AdviceData>();
-  const [dataId, setDataId] = useState<number>(1)
   useEffect(() => {
     fetch(`${API}advice`)
       .then((res) => {
@@ -19,10 +18,15 @@ function App() {
         return res.json();
       })
       .then((data) => setData(data.slip));
-  }, [dataId]);
+  }, []);
 
-  const FetchRandom = (id: number) => {
-    setDataId(id)
+  const FetchRandom = () => {
+    fetch(`${API}advice`)
+      .then((res) => {
+        if (!res.ok) throw new Error();
+        return res.json();
+      })
+      .then((data) => setData(data.slip));
   };
 
   return (
@@ -41,7 +45,7 @@ function App() {
             <hr className="divider" />
           </div>
 
-          <button className="icon" onClick={() => FetchRandom(data.id)}>
+          <button className="icon" onClick={() => FetchRandom()}>
             <img src={iconDice} alt="" />
           </button>
         </div>
