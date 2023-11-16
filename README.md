@@ -2,6 +2,8 @@
   <h1 align="center">Random Advice Generator</h1>
 </div>
 
+<h3>This is a web application that generates random advice when the dice button is clicked</h3>
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -64,17 +66,12 @@ To set up your project, you will need to clone the project and install the depen
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
+To generate a random advice, click the dice button and it will immediately generate a random advice
 <!-- LICENSE -->
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the GNU GENERAL PUBLIC LICENSE. See `LICENSE` for more information.
 
 [product-screenshot]: ./src/assets/desktop.png
 [Typescript]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
