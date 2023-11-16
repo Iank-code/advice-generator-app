@@ -13,7 +13,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 2em 1.5em;
+  padding: 2em 1em;
   border-radius: 10px;
   gap: 10px;
   background-color: hsl(217, 19%, 24%);
@@ -26,11 +26,26 @@ h3 {
   align-items: center;
   color: var(--color-icon);
 }
+
 h1 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  text-align: center;
+}
+
+.text {
+  padding: 0 10px; /* Adjust the spacing between text and quotes */
+}
+
+.quote img {
+  width: 15px;
+  /* margin: 0 5px; */
+}
+.quote .first img {
+  display: none;
 }
 
 .divider-tab {
@@ -57,7 +72,7 @@ h1 {
   position: relative;
   align-items: center;
   top: 4em;
-  left: 11em;
+  left: 12em;
   outline: none;
   background-color: hsl(193, 38%, 86%);
   border-radius: 50%;
@@ -70,10 +85,9 @@ h1 {
 .advice-body .icon:hover {
   background-color: var(--color-icon);
 }
-.advice-body .icon:hover img{
+.advice-body .icon:hover img {
   display: flex;
   transform: perspective(600px) rotateY(180deg) !important;
-
 }
 
 @media screen and (max-width: 400px) {
