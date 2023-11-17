@@ -53,6 +53,7 @@ To set up your project, you will need to clone the project and install the depen
    git clone git@github.com:Iank-code/advice-generator-app.git
    cd advice-generator-app
    ```
+   
 2. Install NPM packages
    ```sh
    npm install
@@ -63,6 +64,7 @@ To set up your project, you will need to clone the project and install the depen
    touch .env.local
    VITE_ADVICE_API=https://api.adviceslip.com/
    ```
+
 4. Start React server
    ```
    npm run dev
