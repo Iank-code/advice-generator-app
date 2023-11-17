@@ -9,10 +9,10 @@ function App() {
     advice: string;
   }
 
-  const API: string = "https://api.adviceslip.com/";
+  console.log(import.meta.env.VITE_ADVICE_API);
   const [data, setData] = useState<AdviceData>();
   useEffect(() => {
-    fetch(`${API}advice`)
+    fetch(`${import.meta.env.VITE_ADVICE_API}advice`)
       .then((res) => {
         if (!res.ok) throw new Error();
         return res.json();
@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   const FetchRandom = () => {
-    fetch(`${API}advice`)
+    fetch(`${import.meta.env.VITE_ADVICE_API}advice`)
       .then((res) => {
         if (!res.ok) throw new Error();
         return res.json();

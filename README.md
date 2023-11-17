@@ -57,7 +57,13 @@ To set up your project, you will need to clone the project and install the depen
    ```sh
    npm install
    ```
-3. Start React server
+
+3. Creat .env.local file and add the environment variable
+   ```sh
+   touch .env.local
+   VITE_ADVICE_API=https://api.adviceslip.com/
+   ```
+4. Start React server
    ```
    npm run dev
    ```
