@@ -34,6 +34,7 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
+  quotes: url("./assets/openingQuote.svg") !important;
 }
 
 .text {
@@ -81,9 +82,11 @@ h1 {
   cursor: pointer;
   outline: none;
   border: none;
+  background-color: var(--color-icon);
 }
 .advice-body .icon:hover {
-  background-color: var(--color-icon);
+  filter: brightness(220%);
+  /* background-color: var(--color-icon); */
 }
 .advice-body .icon:hover img {
   display: flex;
